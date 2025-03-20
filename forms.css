@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: white;
+}
+header {
+    color: #1f1204;
+    text-align: center;
+    background-color: #eaedd9;
+    padding: 5px;
+}
+nav {
+    position: absolute;
+    top: 35px;
+    right: 40px;
+    z-index: 2;
+    display: flex;
+    gap: 25px; 
+}
+nav a {
+    color: #1f1204;
+    text-decoration: none;
+}
+#whatsapp, #instagram {
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    width: 20px;
+}
+#logo {
+    width: 7pc;
+    position: absolute;
+    left: 2px;
+    z-index: 2;
+    bottom: 50.7pc;
+}
+main {
+    padding: 20px;
+}
+main h2 {
+    text-align: center;
+    font-size: 17px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"],
+select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+input[type="submit"] {
+    background-color: #1f1204;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+fieldset {
+    border-radius: 10px;
+    padding: 15px;
+    margin: auto;
+    width: 45%;
+    background-color: #eeeded;
+    border-color: black;
+    border: 3px solid black;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td {
+    padding: 10px;
+    border: 2px solid #000;
+    vertical-align: top;
+}
+footer {
+    background: #1f1204;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 106px;
+}
+}
+ @media screen and (max-width: 600px) {
+            header {
+                padding: 10px 0;
+            }
+            #logo {
+                position: static;
+                transform: none;
+                display: block;
+                margin: 0 auto 10px;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .social-icons {
+                flex-direction: row;
+            }
+            .form-container {
+                max-width: 100%;
+                padding: 0 15px;
+            }
+            .onde-nos-encontrou {
+                flex-direction: column;
+            }
+        }

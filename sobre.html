@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>𝚂𝚊𝚔𝚞𝚛𝚊 𝙲𝚘𝚏𝚏𝚎𝚎</title>
+    <style>
+        body { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh;
+            margin: 0;
+            flex-direction: column; 
+            font-family: Arial, sans-serif; 
+            background-color: #e1d8c4;
+        }
+        #video-container {
+            max-width: 80pc;
+            width: 100%;
+            text-align: center;
+        }
+        #controls {
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            margin: 0 5px;
+            padding: 5px 10px;
+            border-radius: 15px;
+        }
+        #logo {
+            position: relative;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="cafeteira.html"><img src="logo_black.png" id="logo" alt="logo"></a>
+    </header>
+    <div id="video-container">
+        <video id="myVideo" width="100%" controls><source src="2024-11-19%2015-08-42.mp4" type="video/mp4"></video>
+    </div>
+    <div id="controls">
+        <button onclick="playVideo()">Play</button>
+        <button onclick="pauseVideo()">Pause</button>
+        <button onclick="stopVideo()">Stop</button>
+    </div>
+    <script>
+        const video = document.getElementById('myVideo');
+        function playVideo() {
+            video.play();
+        }
+
+        function pauseVideo() {
+            video.pause();
+        }
+
+        function stopVideo() {
+            video.pause();
+            video.currentTime = 0;
+        }
+    </script>
+</body>
+</html>
